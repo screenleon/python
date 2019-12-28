@@ -1,7 +1,4 @@
-import pandas as pd
-import os
-
-# è®€å–æœŸäº¤æ‰€çš„csvæª”æ¡ˆï¼Œä¸æ­£å¸¸ã€‚
+# Åª¨ú´Á¥æ©ÒªºcsvÀÉ®×¡A¤£¥¿±`¡C
 # data = pd.read_csv('op1216.csv', 'coding=Big5', engine='python')
 
 temp = ""

@@ -5,7 +5,7 @@ import re
 import bs4
 
 want_fetch_url = 'https://www.taifex.com.tw/cht/3/dlOptPrevious30DaysSalesData'
-download_folder_path = 'E:\\github\\python\\fetch_csv\\test'   # file download place
+download_folder_path = 'E:\\github\\python\\thirty_days\\fetch_csv\\test'   # file download place
 
 
 def fetch_url_content(_url):
@@ -47,7 +47,6 @@ def is_file_exist(_filename: str):
 
 soup_html = fetch_url_content(want_fetch_url)
 input_button7_elements = soup_html.find_all('input', id='button7')
-
 
 for input_button7_element in input_button7_elements:
     if input_button7_element['onclick'][-3] == 'p':

@@ -33,7 +33,7 @@ def is_file_exist(_filename: str):
 
 
 def output_file(_filename: str, _data: str):
-    with open(_filename, 'w') as fp:
+    with open(_filename, 'w', newline="") as fp:
         fp.writelines(_data)
         # print(_data)
         # fp.write(_data)
